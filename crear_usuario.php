@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuarios_table (nombre, email, password) VALUES ('$nombre', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php"); // Redireccionar a la página principal
+        header("Location: index.html"); // Redireccionar a la página principal
         exit();
     } else {
         echo "Error al crear el usuario: " . $conn->error;
