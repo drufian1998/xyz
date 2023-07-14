@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Actualizar/Eliminar Usuario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Actualizar/Eliminar Usuario</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Actualizar usuario</h2>
+      <form method="post" action="actualizar_usuario.php">
+        <input type="hidden" name="actualizar_id" value="">
+        <label for="nombre_actualizar">Nombre:</label>
+        <input type="text" name="nombre_actualizar" required>
+        <label for="email_actualizar">Correo electrónico:</label>
+        <input type="email" name="email_actualizar" required>
+        <label for="password_actualizar">Contraseña:</label>
+        <input type="password" name="password_actualizar" required>
+        <button type="submit" class="button">Actualizar usuario</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Eliminar usuario</h2>
+      <form method="post" action="eliminar_usuario.php">
+        <input type="hidden" name="eliminar_id" value="">
+        <label for="email_eliminar">Correo electrónico:</label>
+        <input type="email" name="email_eliminar" required>
+        <button type="submit" class="button">Eliminar usuario</button>
+      </form>
+    </section>
+
+    <section>
+      <a href="index.html" class="button">Volver</a>
+      <a href="agregar_usuario.html" class="button">Agregar usuario</a>
+      <a href="ver_usuarios.html" class="button">Ver usuarios</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 - XYZ empresa</p>
+  </footer>
+</body>
+</html>

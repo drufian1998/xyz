@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ver Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ver Usuarios</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lista de usuarios</h2>
+      <table id="usuariosTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo electrónico</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php include 'mostrar_usuarios.php'; ?>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <a href="index.html" class="button">Volver</a>
+      <a href="agregar_usuario.html" class="button">Agregar usuario</a>
+      <a href="actualizar_eliminar.html" class="button">Actualizar/Eliminar usuario</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 - XYZ empresa</p>
+  </footer>
+</body>
+</html>
