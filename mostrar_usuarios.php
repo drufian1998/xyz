@@ -5,15 +5,15 @@ $username = "root";
 $password = "";
 $dbname = "usuarios";
 
-// Crear conexión
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar la conexión
+
 if ($conn->connect_error) {
     die("Error en la conexión a la base de datos: " . $conn->connect_error);
 }
 
-// Obtener lista de usuarios
+
 $sql = "SELECT * FROM usuarios_table";
 $result = $conn->query($sql);
 
