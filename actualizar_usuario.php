@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["actualizar_id"])) {
     $sql = "UPDATE usuarios_table SET nombre='$nombre', email='$email', password='$password' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php"); // Redireccionar a la página principal
+        header("Location: index.html"); // Redireccionar a la página principal
         exit();
     } else {
         echo "Error al actualizar el usuario: " . $conn->error;
